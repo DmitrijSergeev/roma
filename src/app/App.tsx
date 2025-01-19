@@ -1,8 +1,10 @@
+import {Main} from "../components/main/Main.tsx";
+
 function App() {
 
   return (
     <>
-      <h1>Hello!</h1>
+      <Main/>
     </>
   )
 }

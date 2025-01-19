@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+
+  h4 {
+    margin: 7px 0;
+  }
+}
+
+.typographyItem {
+  h4 {
+    margin: 20px 0 0;
+  }
+}
+
+.separator {
+  width: 100%;
+  height: 2px;
+  opacity: 0.3;
+  background-color: var(--color-dark-100);
+}
+
+h1, h2, h4 {
+  color: var(--dark-theme-color-text-3);
+}
