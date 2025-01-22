@@ -1,7 +1,30 @@
-export const TextField = () => {
+export type TextFieldProps = {
+    label?: string;
+    id?: string;
+}
+export const TextField = (props: TextFieldProps) => {
+    const {id, label} = props
+    const classNames = {
+        label: label
+    }
     return (
-        <input>
+        <div>
+            {label && (
+                <label
+                    htmlFor={id}
+                    className={classNames.label}
+                >{label}
+                </label>
+            )}
 
-        </input>
+            <input
+                id={id}
+            >
+
+            </input>
+
+            <button>+</button>
+        </div>
+
     );
 };
