@@ -1,3 +1,5 @@
+import s from './TextField.module.scss'
+
 export type TextFieldProps = {
     label?: string;
     id?: string;
@@ -8,7 +10,7 @@ export const TextField = (props: TextFieldProps) => {
         label: label
     }
     return (
-        <div>
+        <div className={s.container}>
             {label && (
                 <label
                     htmlFor={id}
