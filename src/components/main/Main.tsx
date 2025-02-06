@@ -1,5 +1,5 @@
 import {Link} from "react-router";
-import {TextField} from "../TextField";
+import {TextField} from "../textField";
 import s from './Main.module.scss'
 
 export const Main = () => {
